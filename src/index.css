@@ -11,6 +11,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --arriere-plan: rgb(82, 82, 82);
+  --accent: red;
 }
 
 a {

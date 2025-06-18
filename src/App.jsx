@@ -1,4 +1,4 @@
-import { createSignal } from 'solid-js'
+import { createSignal, For } from 'solid-js'
 import solidLogo from './assets/solid.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -8,6 +8,7 @@ function App() {
 
   return (
     <>
+      <Menu/>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} class="logo" alt="Vite logo" />
@@ -33,3 +34,45 @@ function App() {
 }
 
 export default App
+
+function Menu(){
+  var visible = true;
+  const PageList = [
+    //["Nom affiché", "adresse page"],
+    ["Accueil","index"],
+    ["Truc" , "truc.html"],
+  ]
+//≡
+  const closeMenuAction = () => document.getElementById("menu_container").style.display="none";
+  const openMenuAction = () => document.getElementById("menu_container").style.display="block";
+  
+
+  function CloseMenuButton(){
+    return (
+      <button class="menu_button" onClick={closeMenuAction}>X</button>
+    )
+  }
+
+  function OpenMenuButton(){
+    return (
+      <button class="menu_button" id="menu_button_open" onClick={openMenuAction}>≡</button>
+    )
+  }
+
+  return (
+    <>
+      <OpenMenuButton />
+
+      <div id="menu_container">
+        <CloseMenuButton />
+        <For each={PageList}>
+          {(menu_entry, index) => 
+          <a href={menu_entry[1]} class="menu_entry">
+              {menu_entry[0]}
+          </a> }
+        </For>
+      </div>
+    </>
+
+  )
+}
