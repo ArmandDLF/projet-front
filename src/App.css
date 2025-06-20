@@ -14,6 +14,8 @@ body {
   padding: 6px;
   color: inherit;
   transition: all 2s ease-in-out;
+  /* Juste pour qu'il ne soit pas ouvert au début */
+  display: none;
 }
 /* Un  élément du menu */
 #menu_container a.menu_entry{

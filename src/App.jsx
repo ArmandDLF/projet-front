@@ -1,32 +1,20 @@
 import { createSignal, For, onMount } from 'solid-js'
 import pfp from './assets/pfp.jpg'
 import './App.css'
+import { Pages } from './index.jsx'
 
-function App() {
+export const App = (props) => (
+  <>
+    <Menu />
+    {props.children}
+  </>
+);
 
-  return (
-    <>
-      <Menu/>
-      <Association />
-    </>
-  )
-}
 
-export default App
 
 function Menu(){
-
-  onMount(() => {
-    const menu = document.getElementById("menu_container");
-    if (menu) menu.style.display = "none";
-  });
-
   var visible = true;
-  const PageList = [
-    //["Nom affiché", "adresse page"],
-    ["Accueil","index"],
-    ["Nos activités" , "truc.html"],
-  ]
+
 //≡
   const closeMenuAction = () => document.getElementById("menu_container").style.display="none";
   const openMenuAction = () => document.getElementById("menu_container").style.display="block";
@@ -50,7 +38,7 @@ function Menu(){
 
       <div id="menu_container">
         <CloseMenuButton />
-        <For each={PageList}>
+        <For each={Pages}>
           {(menu_entry, index) => 
           <a href={menu_entry[1]} class="menu_entry">
               {menu_entry[0]}
@@ -62,7 +50,7 @@ function Menu(){
   )
 }
 
-function Association() {
+export function Association() {
   const team = [
     {
       name: "Alice",
