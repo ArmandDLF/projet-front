@@ -53,27 +53,28 @@ function Menu(){
 export function Association() {
   const team = [
     {
-      name: "Alice",
-      role: "Présidente",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae velit ex."
+      name: "Armand",
+      role: "Président",
+      desc: "à moi le WEI, c'était bien sûr mon seul objectif  à défaut d'avoir des compétences particulières j'ai beaucoup de 🌟 motivation 🌟et j'a-dore ne pas dormir"
     },
     {
-      name: "Bob",
+      name: "Mathis",
+      role: "Secrétaire général",
+      desc: "le sérieux est inversement proportionnel à son nombre de co, mais ça ne l'empêchera pas d'être incroyablement gentil et méthodique pour faire rayonner l'association et tout organiser de l'intérieur."
+    },
+    {
+      name: "Arthur",
       role: "Trésorier",
-      desc: "Mauris dapibus risus quis suscipit vulputate. Egestas purus viverra accumsan in nisl nisi."
-    },
-    {
-      name: "Charlie",
-      role: "Secrétaire",
-      desc: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+      desc: "grand cumulard de la promo, comptez sur nous pour que ce soit uniquement dans les autres assos qu'il se claque"
     }
   ];
 
   return (
     <div class="association-page">
-      <h1>L'Association</h1>
+      <h1>Cahier vert</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.
+        🍀 Cahier Vert 📗
+On est des étudiants des Mines de Paris voulant faire découvrir le monde du supérieur aux collégiens/lycéens et soutenir les élèves vivant la prepa 🍀📗
       </p>
       <h2>L'équipe</h2>
       <div class="team-list">
@@ -93,7 +94,10 @@ export function Association() {
       </div>
       <h2>Notre histoire</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+       Cahier Vert, c’est l'association d'égalité des chances des Mines 🤝.
+Elle mène des actions du collège à la prépa : découverte des filières scientifiques, ouverture culturelle, soutien scolaire et accompagnement psychologique.
+Nous préparons activement l'année à venir et comptons sur les prochains Mineurs pour nous aider dans toutes nos actions !
+Prêt·e·s à vous engager avec nous ? 💚
       </p>
     </div>
   );
