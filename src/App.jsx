@@ -55,17 +55,17 @@ export function Association() {
     {
       name: "Armand",
       role: "Président",
-      desc: "à moi le WEI, c'était bien sûr mon seul objectif  à défaut d'avoir des compétences particulières j'ai beaucoup de 🌟 motivation 🌟et j'a-dore ne pas dormir"
+      desc: "A moi le WEI, c'était bien sûr mon seul objectif !! A défaut d'avoir des compétences particulières j'ai beaucoup de 🌟 motivation 🌟et j'a-dore ne pas dormir"
     },
     {
       name: "Mathis",
       role: "Secrétaire général",
-      desc: "le sérieux est inversement proportionnel à son nombre de co, mais ça ne l'empêchera pas d'être incroyablement gentil et méthodique pour faire rayonner l'association et tout organiser de l'intérieur."
+      desc: "Son sérieux est inversement proportionnel à son nombre de collocataires, et ça ne l'empêchera pas d'être incroyablement gentil et méthodique pour faire rayonner l'association et tout organiser de l'intérieur."
     },
     {
       name: "Arthur",
       role: "Trésorier",
-      desc: "grand cumulard de la promo, comptez sur nous pour que ce soit uniquement dans les autres assos qu'il se claque"
+      desc: "Grand cumulard de la promo, comptez sur nous pour que ce soit uniquement dans les autres assos qu'il se claque"
     }
   ];
 
