@@ -7,6 +7,10 @@ import derivier from './assets/24derivier.jpg'
 import liens from './assets/24liens.jpg'
 import climaud from './assets/24climaud.jpg'
 
+import logo_mines from './assets/logo_mines.png'
+import logo_h4 from './assets/logo_lycee_henri4.jpg'
+import logo_dauphine from './assets/logo_dauphine.png'
+
 export const App = (props) => (
   <>
     <Menu />
@@ -114,4 +118,46 @@ Prêt·e·s à vous engager avec nous ? 💚
       </p>
     </div>
   );
+}
+
+
+export function Partenaires() {
+  const partenaires = 0;
+
+  return (<>
+
+  <header>
+    <h1>Nos Partenaires</h1>
+    <p>Merci à tous ceux qui soutiennent notre association</p>
+  </header>
+
+  <div class="container">
+
+    <div class="partenaire">
+      <img src="src/assets/logo_mines.png" alt="Logo Mines"/>
+      <div class="partenaire-info">
+        <h2>Mines de Paris</h2>
+        <p>L'école a toujours été un soutien considérable pour l'association, tant par la réalisation de journée autour de la science enseignée aux jeunes dans ses murs, que dans la place considérable qu'elle donne à Cahier Vert chaque année.</p>
+      </div>
+    </div>
+
+    <div class="partenaire">
+      <img src="src/assets/logo_lycee_henri4.jpg" alt="Logo lycée Henri 4"/>
+      <div class="partenaire-info">
+        <h2>Lycée Henri 4</h2>
+        <p>Nous collaborons avec le Lycée Henri 4 depuis de nombreuses années pour aider les élèves qui y seraient en difficulté, notamment ceux ayant fait un lycée un peu moins presitigieux, et pour qui le saut de la classe prépa est grand.</p>
+      </div>
+    </div>
+
+    <div class="partenaire">
+      <img src="src/assets/logo_dauphine.png" alt="Logo Paris Dauphine"/>
+      <div class="partenaire-info">
+        <h2>Université Paris Dauphine</h2>
+        <p>L'université est un grand partenaire de la vie associative en général aux Mines, mais nos permet à Cahier vert de décupler notre force d'action, notamment pour les sorties organisées par le pôle collège.</p>
+      </div>
+    </div>
+
+  </div>
+  
+  </>);
 }

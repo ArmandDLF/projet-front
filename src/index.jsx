@@ -1,7 +1,7 @@
 /* @refresh reload */
 import { For, render } from 'solid-js/web'
 import './index.css'
-import {App, Association} from './App.jsx'
+import {App, Association, Partenaires} from './App.jsx'
 
 import { Route, Router } from '@solidjs/router'
 
@@ -10,7 +10,7 @@ const root = document.getElementById('root')
 export const Pages = [
 	//[Nom_affichage, chemin, composant],
 	["L'association", "/", Association],
-	["Autre page", "/truc", ]
+	["Nos partenaires", "/partenaires", Partenaires]
 ];
 
 

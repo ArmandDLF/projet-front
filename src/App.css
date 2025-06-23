@@ -4,6 +4,17 @@ body {
   min-height: 100vh;
 }
 
+header {
+  background-color: #005a87;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
 #menu_container{
   position: absolute;
   left: 0;
@@ -118,4 +129,39 @@ body {
   margin: 0;
   color: #555;
   font-size: 0.97em;
+}
+
+
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.partenaire {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+}
+
+.partenaire img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.partenaire-info h2 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #005a87;
+}
+
+.partenaire-info p {
+  margin: 5px 0 0 0;
+  color: black
 }
