@@ -94,7 +94,7 @@ On est des étudiants des Mines de Paris voulant faire découvrir le monde du su
         {team.map(member => (
           <div class="team-member" style={{ display: "flex", alignItems: "center", marginBottom: "1em" }}>
             <img
-              src={pfp}
+              src={member.img ?? pfp}
               alt="Profil"
               style={{ width: "60px", height: "60px", borderRadius: "50%", marginRight: "1em", objectFit: "cover" }}
             />
