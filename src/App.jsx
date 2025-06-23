@@ -2,6 +2,10 @@ import { createSignal, For, onMount } from 'solid-js'
 import pfp from './assets/pfp.jpg'
 import './App.css'
 import { Pages } from './index.jsx'
+import defonten from './assets/24defonten.jpg'
+import derivier from './assets/24derivier.jpg'
+import liens from './assets/24liens.jpg'
+import climaud from './assets/24climaud.jpg'
 
 export const App = (props) => (
   <>
@@ -55,17 +59,26 @@ export function Association() {
     {
       name: "Armand",
       role: "Président",
+      img: defonten,
       desc: "A moi le WEI, c'était bien sûr mon seul objectif !! A défaut d'avoir des compétences particulières j'ai beaucoup de 🌟 motivation 🌟et j'a-dore ne pas dormir"
     },
     {
       name: "Mathis",
       role: "Secrétaire général",
+      img: liens,
       desc: "Son sérieux est inversement proportionnel à son nombre de collocataires, et ça ne l'empêchera pas d'être incroyablement gentil et méthodique pour faire rayonner l'association et tout organiser de l'intérieur."
     },
     {
       name: "Arthur",
       role: "Trésorier",
+      img: climaud,
       desc: "Grand cumulard de la promo, comptez sur nous pour que ce soit uniquement dans les autres assos qu'il se claque"
+    },
+    {
+      name: "Zéphyr",
+      role: "Respo entreprise",
+      img : derivier,
+      desc: "Ce parisien a autant d'amour pour l'argent que pour coder en C++, ce qui n'est pas peu dire. Ce geek qui le dissimule comme il le peut, sera le plus à même d'utiliser ses talents de taupe pour nous dénicher les meilleurs partenariats."
     }
   ];
 
